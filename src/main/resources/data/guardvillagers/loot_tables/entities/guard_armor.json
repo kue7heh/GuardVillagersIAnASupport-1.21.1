@@ -1,0 +1,21 @@
+{
+  "type": "guardvillagers:slot",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:loot_table", "name": "guardvillagers:entities/armor_sets/armor" }
+      ]
+    },
+    {
+      "name": "cgs_flintlock",
+      "rolls": 0.5,
+      "entries": [{
+        "type": "minecraft:item",
+        "name": "cgs:flintlock"
+      }],
+      "conditions": [{ "condition": "minecraft:random_chance", "chance": 0.067 }],
+      "functions": [{ "function": "guardvillagers:slot", "slot": "mainhand" }]
+    }
+  ]
+}
